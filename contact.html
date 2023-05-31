@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .hero-area::before{
+        content: "";
+        position:absolute;
+        width:100%;
+        height:20px;
+        background-color: #023b48;
+    }   
+   *, *::before,*::after{                /*google*/
+    box-sizing:border-box;    
+    } 
+    /*nav css*/
+    .navigation{
+        padding:5px 0;
+        align-items:center;
+        display:flex;
+        justify-content: center;
+    }
+    .nav-logo{
+        display:flex;
+        align-items: center;
+        flex-direction:column;          
+        padding-top:2px;
+        padding-bottom: 2px;
+}
+    .nav-logo p{
+        text-transform:uppercase;
+        font-size:20px;
+        font-weight:70px;
+        color:black;
+
+        margin-top: 5px;
+
+    }
+    .nav-all-content{
+        display:flex;
+        flex-grow: 1;     /*google*/
+        align-items: center;
+        
+
+    }
+    .nav-content{
+        display:flex;
+        align-items: center;
+    }
+    .nav-all-content li a:hover{
+        color:black;
+        text-decoration: none;
+    }
+    .nav-all-content li a{
+        color:black;
+    }
+    
+    .nav-all-content ul{
+        display:flex;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        
+        
+    }
+    .nav-all-content li{
+        margin-left: 30px;
+        padding: 15px;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        text-transform:uppercase;
+        font-size:15px;
+        font-weight:600;
+       
+    }
+    .nav-all-content ul,li{
+        cursor: pointer;
+        
+        flex:auto;
+
+
+    }
+
+    .map{
+        position:relative;
+    }
+    .map .container{
+        width:40%;
+        position:absolute;
+        bottom: 0;
+        left:30%;
+        height:115%
+
+    }
+    .row{
+        display:flex;
+        flex-wrap: wrap;
+        margin-right:-15px;
+        margin-left:-15px;
+    }
+    .map_area .container form{
+        width:100%;
+        background-color: rgba(255, 255, 255, 0.98 );
+        padding:45px;
+        margin-top:2%;
+        margin:75px 0;
+        display: block;
+    }
+    .contact-head h2{
+text-align: center;
+    }
+    
+    input{
+        margin:15px;
+        border:none;
+        outline: none;
+        border-bottom: 1px solid black;
+        width:100%;
+
+    }
+    .xyz button:hover{
+        background: white;
+        color: #023b48;
+    }
+    .xyz button{
+        display: inline-block;
+        padding: 12px 65px;
+        background-color: #023b48;
+        border:1px solid #023b48;
+        border-radius: 300px;
+        color: #ffffff;
+        margin-top: 10%;
+        width: 100%;
+        align-items: center;
+}
+    
+
+
+   /*info area css*/
+   
+   .info-area{
+    background-color: #0dc3ff;
+    }
+    .items-info{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+        background: transparent;
+            }
+    .items-info a{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding:50px ;
+        position: relative;
+        
+    }
+    .items-info .items{
+        width:200px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+    }
+    .box2{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 20px;
+        padding: 10px;
+    }
+    .details-box{
+        text-align: center;
+        
+        color:white;
+        margin-top: 20px;
+    }
+    .services-footer p{
+
+text-align: center;
+font-size: 125%;
+margin:2%;
+    }
+  
+
+</style>
+<body class="services">
+    <div class="hero-area">::before</div>
+    <header class="header-area">
+        <div class="container-fluid">
+            <nav class="navigation" >
+                <a class="nav-logo" href="#logo">
+                    <image src="..\images\logo.png"></image>
+                    <p>PETOLOGY</p>
+                </a>
+                    <div class="nav-all-content">
+                        <div class="nav-content">
+                                 <ul>
+                                    <li><a href="..\home.html">HOME</a></li>
+                                    <li><a href="..\services.html">SERVICE</a></li>
+                                    <li><a href="..\pets gallery.html">PET'S GALLERY</a></li>
+                                    <li><a href="..\clinc.html">CLINIC</a></li>
+                                    <li><a href="action">CONTACT US</a></li>
+                                    <li><a href="..\buy now.html">BUY NOW</a></li>
+                                  
+                                      
+                        </div>      
+                                      <li><a>CALL: +01 1234567890</a></li>
+                                </ul>
+
+                    </div>
+            </nav>
+        </div>
+    </header>
+<section class="map_area">
+    <div class="map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14270.935700171936!2d85.4838111!3d26.5929122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3eb97c362b7e2b6a!2sJanki%20Mandir%20Sitamarhi!5e0!3m2!1sen!2sin!4v1657283423507!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div class="container">
+        <div class="row">
+            <div class='col-md-8 col-sm-10 offset-md-4'>
+                <form action>
+                    <div class="contact-head">
+                        <h2> Contact Us</h2>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="message">
+                    </div>
+                    <div class="xyz">
+                        <button>SEND</button>
+                    </div>
+               
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+   
+
+    <section class="info-area">
+        <div class="container">
+            <div class="items-info">
+                <a href>
+                    <div class="items">
+                        <div class="box2">
+                            <img src="..\images\location-white.png">
+                        </div>
+                        <div class="details-box">
+                            <p>Location</p>
+                        </div>
+                    </div>
+                </a>
+                <a href>
+                    <div class="items">
+                        <div class="box2">
+                            <img src="..\images\telephone-white.png">
+                        </div>
+                        <div class="details-box">
+                            <p>+02 1234567890
+                              </p>
+                        </div>
+                    </div>
+                </a>
+                 <a href>
+                    <div class="items">
+                        <div class="box2">
+                            <img src="..\images\envelope-white.png">
+                        </div>
+                        <div class="details-box">
+                            <p>demo@gmail.com
+                             </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    <section class="services-footer">
+        <p>
+            " © 2019 All Rights Reserved By "
+            <a href="https://html.design/">Free Html Templates</a>
+        </p>
+    </section>
+
+
+ 
